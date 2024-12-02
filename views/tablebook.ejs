@@ -1,0 +1,19 @@
+<h1>TABEL BUKU</h1>
+<table border="1">
+<tr>
+    <th>title</th>
+    <th>author</th>
+    <th>year_written</th>
+    <th>edition</th>
+    <th>price</th>
+</tr>
+<% manipulateData.forEach(el => { %>
+    <tr>
+        <td><%= el.title %></td>
+        <td><%= el.author %></td>
+        <td><%= el.year_written %></td>
+        <td><%= el.edition %></td>
+        <td><%= el.price %></td>
+    </tr>
+<% }); %>
+</table>
